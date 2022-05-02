@@ -1,4 +1,3 @@
-from turtle import title
 from flask import render_template
 from app import app
 
@@ -12,11 +11,11 @@ def index():
     title = "NewsFlash - Latest breaking news and information on top stories"
     return render_template('index.html',title=title)
 
-@app.route('/article/<int:articles_id>')
+@app.route('/articles/<int:articles_id>')
 def articles(articles_id):
     
     '''
     View movie page function that returns the movie details page and its data
     '''
 
-    return render_template('article.html', id = articles_id)
+    return render_template('articles.html', id = articles_id)
