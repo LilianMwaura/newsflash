@@ -46,8 +46,8 @@ def process_results(articles_list):
         url = articles_item.get("url")
         category = articles_item.get("category")
 
-        if poster:
-            articles_object = Articles(id,name,description,url,category)
-            articles_results.append(articles_object)
+        
+        articles_object = Articles(id,name,description,url,category)
+        articles_results.append(articles_object)
 
     return articles_results    
