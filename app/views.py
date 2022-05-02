@@ -11,9 +11,12 @@ def index():
     '''
     title = "NewsFlash - Latest breaking news and information on top stories"
     return render_template('index.html',title=title)
-@app.route('/article/<id>')
-def article(id):
+
+@app.route('/article/<int:articles_id>')
+def articles(articles_id):
     
-    
-    articles = get_article(id)
-    return render_template('article.html',articles=articles,id=id )
+    '''
+    View movie page function that returns the movie details page and its data
+    '''
+
+    return render_template('article.html', id = articles_id)
