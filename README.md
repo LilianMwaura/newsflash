@@ -2,7 +2,7 @@
 NewsFlash App
 
 ## Project Description
-This is an Angular application that helps users search for githubusers and repositories across Github.It uses the github Api to fetch user and repositories data.
+This is a news application that contains different news sources and enables the user to browse through diffrent sources containing different news articles.
 
 ## Set-up Instructions
 Open Terminal {Ctrl+Alt+T}
