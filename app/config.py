@@ -2,7 +2,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    pass
+    ARTICLES_API_BASE_URL = 'https://newsapi.org/v2/sources?apiKey={}'
 
 
 
@@ -30,4 +30,5 @@ class Config:
     '''
     General configuration parent class
     '''
-    ARTICLES_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
+    ARTICLES_API_BASE_URL = 'https://newsapi.org/v2/sources?apiKey={}'
+

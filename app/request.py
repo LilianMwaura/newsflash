@@ -6,7 +6,7 @@ Articles= articles.Articles
 # Getting api key
 api_key = app.config['ARTICLES_API_KEY']
 
-# Getting the movie base url
+# Getting the articles base url
 base_url = app.config["ARTICLES_API_BASE_URL"]
 
 def get_articles(category):
