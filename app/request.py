@@ -54,7 +54,7 @@ def get_articles(id):
         articles_source_data = url.read()
         articles_source_response = json.loads(articles_source_data)
 
-        article_source_results = None
+        articles_source_results = None
 
         if articles_source_response['articles']:
             articles_source_list = articles_source_response['articles']
@@ -67,17 +67,17 @@ def process_articles_results(news):
     '''
     A function that processes the json files of news articles from api
     '''
-    article_source_results = []
-    for article in news:
-        author = article.get('author')
-        title = article.get('title')
-        description = article.get('description')
-        url = article.get('url')
-        urlToImage = article.get('urlToImage')
-        publishedAt = article.get ('publishedAt')
+    articles_source_results = []
+    for articles in news:
+        author = articles.get('author')
+        title = articles.get('title')
+        description = articles.get('description')
+        url = articles.get('url')
+        urlToImage = articles.get('urlToImage')
+        publishedAt = articles.get ('publishedAt')
 
         if url:
-            article_objects = articles.Article(author,title,description,url,urlToImage,publishedAt)
-            article_source_results.append(article_objects)
+            articles_objects = articles.Articles(author,title,description,url,urlToImage,publishedAt)
+            articles_source_results.append(articles_objects)
 
-    return article_source_results
+    return articles_source_results
