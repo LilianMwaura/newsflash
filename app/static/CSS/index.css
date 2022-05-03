@@ -1,0 +1,36 @@
+.btn:hover {
+    color: black;
+    background-color:white;
+    transition: 350ms;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    color: #483434;
+}
+p {
+    font-family: 'Libre Bodini' sans-serif;
+}
+.intro {
+    padding: 4%;
+    margin: 2%
+}
+
+.sources {
+    align-items: center;
+    padding: 4%;
+    
+}
+
+
+
+.card-body:hover {
+    border: 3px solid #483434;
+    transition: 200ms;
+}
+
+.articles {
+    padding: 4%;
+    margin-top: 2%;
+}
