@@ -2,7 +2,7 @@
 NewsFlash App
 
 ## Project Description
-This is a news application that contains different news sources and enables the user to browse through diffrent sources containing different news articles.
+This is a news application that contains different news sources and enables the user to browse through different sources containing different news articles.
 
 ## Set-up Instructions
 Open Terminal {Ctrl+Alt+T}
