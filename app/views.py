@@ -16,11 +16,11 @@ def index():
     
     return render_template('index.html',title=title,sources= source)
 
-@app.route('/articles/<int:articles_id>')
-def articles(articles_id):
+@app.route('/articles/<id>')
+def articles(id):
     
     '''
     View movie page function that returns the movie details page and its data
     '''
     articles = get_articles(id)
-    return render_template('articles.html', id = articles_id)
+    return render_template('articles.html', articles = articles, id = id)

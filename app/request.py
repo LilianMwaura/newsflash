@@ -3,7 +3,6 @@ import urllib.request,json
 from .models import articles
 from .models import source
 
-Articles= articles.Articles
 # Getting api key
 api_key = app.config['ARTICLES_API_KEY']
 
@@ -48,7 +47,7 @@ def process_results(source_list):
     return source_results
 
 def get_articles(id):
-    articles_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&api_key={}'.format(id,api_key)
+    articles_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id,api_key)
     print(articles_source_url)
     with urllib.request.urlopen(articles_source_url) as url:
         articles_source_data = url.read()
@@ -68,13 +67,13 @@ def process_articles_results(news):
     A function that processes the json files of news articles from api
     '''
     articles_source_results = []
-    for articles in news:
-        author = articles.get('author')
-        title = articles.get('title')
-        description = articles.get('description')
-        url = articles.get('url')
-        urlToImage = articles.get('urlToImage')
-        publishedAt = articles.get ('publishedAt')
+    for article in news:
+        author = article.get('author')
+        title = article.get('title')
+        description = article.get('description')
+        url = article.get('url')
+        urlToImage = article.get('urlToImage')
+        publishedAt = article.get ('publishedAt')
 
         if url:
             articles_objects = articles.Articles(author,title,description,url,urlToImage,publishedAt)

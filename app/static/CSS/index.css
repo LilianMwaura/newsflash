@@ -1,3 +1,4 @@
+
 .btn:hover {
     color: black;
     background-color:white;
@@ -10,21 +11,20 @@ h1, h2, h3, h4, h5, h6 {
     color: #483434;
 }
 p {
-    font-family: 'Libre Bodini' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .intro {
     padding: 4%;
-    margin: 2%
+    background-color: #F6EDDF;
 }
 
 .sources {
     align-items: center;
     padding: 4%;
+    padding-top: 2%;
+    background-color: #F6EDDF;
     
 }
-
-
-
 .card-body:hover {
     border: 3px solid #483434;
     transition: 200ms;
@@ -32,5 +32,11 @@ p {
 
 .articles {
     padding: 4%;
-    margin-top: 2%;
+    padding-top: 2%;
+}
+.container-fluid{
+    background-color: #F6EDDF;
+}
+.container-fluid h2{
+    padding-top: 1%;
 }
